@@ -63,6 +63,11 @@ pipeline {
                     git config user.email "edithcherotich32@gmail.com"
                     git config user.name "Edith Cherotich"
                     BUILD_NUMBER=${BUILD_NUMBER}
+
+                    echo "Current working directory:"
+                    pwd
+                    echo "Listing all files recursively:"
+                    ls -R
                     sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" Spring-Boot-based-Java-web-application/Spring-Boot-Manifests/deployment.yaml
                     git add Spring-Boot-based-Java-web-application/Spring-Boot-Manifests/deployment.yaml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"

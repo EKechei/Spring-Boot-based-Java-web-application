@@ -37,7 +37,7 @@ pipeline {
 
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "eddy/ultimate-cicd:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "ekechei/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "Spring-Boot-based-Java-web-application/Dockerfile"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
       }

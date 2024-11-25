@@ -10,7 +10,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/EKechei/Spring-Boot-based-Java-web-application.git'
+        git branch: 'main', url: 'https://github.com/EKechei/Spring-Boot-based-Java-web-application.git'
       }
     }
 

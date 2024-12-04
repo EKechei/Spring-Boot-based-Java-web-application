@@ -49,7 +49,7 @@ The setup ensures a streamlined, automated, and efficient development-to-deploym
 # Setup and Execution
 # Step 1: Clone the Repository
 ```
-git clone https://github.com/<your-username>/<your-repo-name>.git
+git clone https://github.com/EKechei/Spring-Boot-based-Java-web-application.git
 
 ```
 # Step 2: Run Locally
